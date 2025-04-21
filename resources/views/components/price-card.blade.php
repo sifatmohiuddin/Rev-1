@@ -1,5 +1,5 @@
-<div class="w-64">
-    <div class="rounded-2xl px-5 py-10 shadow" style="background-color: #464646;" onmouseover="this.style.backgroundColor='#117fe6ee'" onmouseout="this.style.backgroundColor='#464646'">
+<div class="">
+    <div class=program__card>
 
         <p class="text-center text-2xl font-bold text-white">{{ $monthText }}</p>
 

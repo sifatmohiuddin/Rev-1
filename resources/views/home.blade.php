@@ -31,7 +31,8 @@
             you stay active, build muscle, and improve flexibility.
           </p>
           <div class="header__btn">
-            <button class="btn">Get Started</button>
+            <a href="{{ route('membership.index') }}" class="btn">Get Started</a>
+
 
           </div>
           <div class="header__stats">
@@ -77,70 +78,7 @@
       </div>
     </section>
 
-    <section class="program" id="program">
-      <div class="section__container program__container">
-        <div class="program__header">
-          <h2 class="section__header">The Best Programs We Offer For You</h2>
-          <p class="section__description">
-            From strength training and yoga to cardio and weight loss programs,
-            we offer a variety of workouts to keep you motivated and on track.
-            Join us and find the perfect program for you.
-          </p>
-        </div>
-        <div class="program__grid">
-          <div class="program__card">
-            <img src="assets/program-1.png" alt="program" />
-            <h4>Strength Training</h4>
-            <p>
-              Build muscle, increase endurance, and enhance overall strength
-              with our expert-led resistance and weight training sessions.
-            </p>
-            <a href="#">
-              Learn More
-              <span><i class="ri-arrow-right-line"></i></span>
-            </a>
-          </div>
-          <div class="program__card">
-            <img src="assets/program-2.png" alt="program" />
-            <h4>Basic Yoga</h4>
-            <p>
-              Improve flexibility, balance, and mental well-being with guided
-              yoga sessions designed for relaxation and inner peace.
-            </p>
-            <a href="#">
-              Learn More
-              <span><i class="ri-arrow-right-line"></i></span>
-            </a>
-          </div>
-          <div class="program__card">
-            <img src="assets/program-3.png" alt="program" />
-            <h4>Body Building</h4>
-            <p>
-              Sculpt and define your physique with targeted workouts, expert
-              coaching, and personalized training plans.
-            </p>
-            <a href="#">
-              Learn More
-              <span><i class="ri-arrow-right-line"></i></span>
-            </a>
-          </div>
-          <div class="program__card">
-            <img src="assets/program-4.png" alt="program" />
-            <h4>Weight Loss</h4>
-            <p>
-              Burn calories, boost metabolism, and achieve your ideal weight
-              with our effective fat-burning and cardio-based programs.
-            </p>
-            <a href="#">
-              Learn More
-              <span><i class="ri-arrow-right-line"></i></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="program" id="program">
+    <section class="program" id="plans">
         <div class="section__container program__container">
           <div class="program__header">
             <h2 class="section__header">Our Fitness Plan</h2>
@@ -152,47 +90,107 @@
                 Choose the plan that suits you best and start your fitness journey today!
             </p>
           </div>
+          <div class="">
+            <div class="program__grid ">
+              <x-price-card
+                monthText="1 Month"
+                price="1200"
+                green="text-green-500"
+                green2="text-green-500"
+                green3="text-green-500"
+                green4="text-gray-500"
+              />
+
+              <x-price-card
+                monthText="3 Months"
+                price="3500"
+                green="text-green-500"
+                green2="text-green-500"
+                green3="text-green-500"
+                green4="text-gray-500"
+              />
+
+              <x-price-card
+                monthText="1 Year"
+                price="10000"
+                green="text-green-500"
+                green2="text-green-500"
+                green3="text-green-500"
+                green4="text-green-500"
+              />
+
+              <x-price-card
+                monthText="Life Time"
+                price="50000"
+                green="text-green-500"
+                green2="text-green-500"
+                green3="text-green-500"
+                green4="text-green-500"
+              />
+            </div>
+          </div>
+
+      </section>
+
+      <section class="program" id="program">
+        <div class="section__container program__container">
+          <div class="program__header">
+            <h2 class="section__header">The Best Programs We Offer For You</h2>
+            <p class="section__description">
+              From strength training and yoga to cardio and weight loss programs,
+              we offer a variety of workouts to keep you motivated and on track.
+              Join us and find the perfect program for you.
+            </p>
+          </div>
           <div class="program__grid">
-            <x-price-card monthText="1 Month"   price="1200 "
-
-
-            green="text-green-500"
-            green2="text-green-500"
-            green3="text-green-500"
-            green4="text-gray-500"
-
-            />
-
-            <x-price-card monthText="3 Months"  price="3500 "
-
-            green="text-green-500"
-            green2="text-green-500"
-            green3="text-green-500"
-            green4="text-gray-500"
-
-            />
-
-
-            <x-price-card monthText="1 Year"  price="10000 "
-
-
-            green="text-green-500"
-            green2="text-green-500"
-            green3="text-green-500"
-            green4="text-green-500"
-
-            />
-
-            <x-price-card monthText="Life Time"  price="50000 "
-
-            green="text-green-500"
-            green2="text-green-500"
-            green3="text-green-500"
-            green4="text-green-500"
-
-            />
-
-
+            <div class="program__card">
+              <img src="assets/program-1.png" alt="program" />
+              <h4>Strength Training</h4>
+              <p>
+                Build muscle, increase endurance, and enhance overall strength
+                with our expert-led resistance and weight training sessions.
+              </p>
+              <a href="#">
+                Learn More
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+            <div class="program__card">
+              <img src="assets/program-2.png" alt="program" />
+              <h4>Basic Yoga</h4>
+              <p>
+                Improve flexibility, balance, and mental well-being with guided
+                yoga sessions designed for relaxation and inner peace.
+              </p>
+              <a href="#">
+                Learn More
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+            <div class="program__card">
+              <img src="assets/program-3.png" alt="program" />
+              <h4>Body Building</h4>
+              <p>
+                Sculpt and define your physique with targeted workouts, expert
+                coaching, and personalized training plans.
+              </p>
+              <a href="#">
+                Learn More
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+            <div class="program__card">
+              <img src="assets/program-4.png" alt="program" />
+              <h4>Weight Loss</h4>
+              <p>
+                Burn calories, boost metabolism, and achieve your ideal weight
+                with our effective fat-burning and cardio-based programs.
+              </p>
+              <a href="#">
+                Learn More
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -89,3 +89,4 @@ const swiper = new Swiper(".swiper", {
       disableOnInteraction: false, // Keeps autoplay running even when interacting with the swiper
     },
   });
+
