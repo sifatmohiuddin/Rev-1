@@ -29,6 +29,7 @@ class MembershipFactory extends Factory
         'workout_time' => $this->faker->randomElement(['morning', 'afternoon', 'evening']),
         'medical_history' => $this->faker->optional()->sentence,
         'membership_plan' => $this->faker->randomElement([1, 3, 6]),
+        'membership_start_date' => now(),
     ];
 }
 

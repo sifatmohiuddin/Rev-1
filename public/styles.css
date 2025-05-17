@@ -76,8 +76,14 @@ body {
 }
 
 header {
-  background-color: #1d1b26;
+  background-color: #1d1b26; /* fallback color */
+  background-image: url("assets/cover.png"); /* adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 630px; /* or whatever height you need */
   overflow: hidden;
+
 }
 
 nav {
@@ -88,16 +94,16 @@ nav {
 }
 
 .nav__header {
-  padding: 1rem;
+  padding: .1rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background-color: black;
 }
 
 .nav__logo a img {
-  max-width: 50px;
+  max-width: 70px;
 }
 
 .nav__menu__btn {
@@ -117,7 +123,7 @@ nav {
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  background-color: var(--primary-color);
+  background-color: black;
   transition: transform 0.5s;
   z-index: -1;
 }
@@ -333,7 +339,7 @@ nav {
 }
 
 .testimonial__card {
-  padding: 1rem;
+  padding: .1rem;
   border-radius: 1rem;
   background-color: var(--background-color-3);
 }
@@ -625,6 +631,6 @@ footer {
   }
 
   .testimonial__card {
-    padding: 1.5rem;
+    padding: .1rem;
   }
 }

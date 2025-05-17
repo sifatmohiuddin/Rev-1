@@ -16,7 +16,7 @@
       <li><a href="#program">Programs</a></li>
       <li><a href="#testimonial">Testimonials</a></li>
       <li>
-        <a href="{{ route('signup') }}" class="btn">Sign Up</a>
+        <a href="{{ route('members.show') }}" class="btn">Admin</a>
       </li>
     </ul>
   </nav>

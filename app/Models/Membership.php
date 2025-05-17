@@ -9,6 +9,16 @@ class Membership extends Model
 {
     use HasFactory;
 
+    protected static function booted()
+    {
+        static::creating(function ($membership) {
+            // If not manually set, default it to created_at
+            if (empty($membership->membership_start_date)) {
+                $membership->membership_start_date = now(); // Or: $membership->created_at
+            }
+        });
+    }
+
     protected $fillable = [
         'name',
         'phone',
@@ -22,13 +32,16 @@ class Membership extends Model
         'workout_time',
         'medical_history',
         'membership_plan',
+        'membership_start_date',
     ];
 
 
     public function plan()
 {
-    return $this->hasOne(Plan::class);
+    return $this->hasMany(Plan::class);
 }
+
+
 
 }
 

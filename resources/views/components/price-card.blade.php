@@ -52,8 +52,15 @@
       </div>
 
       <div class="mt-8">
-        <button class="w-full rounded-lg bg-white px-3 py-2 text-base font-medium text-black hover:bg-slate-200" >
-            Apply </button>
+        <button
+    onclick="window.location='{{ route('membership.index') }}'"
+    class="w-full rounded-lg bg-white px-3 py-2 text-base font-medium text-black hover:bg-slate-200"
+>
+    Apply
+</button>
+
       </div>
     </div>
     </div>
+
+

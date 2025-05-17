@@ -7,6 +7,7 @@ use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PlanAssignController;
 use App\Http\Controllers\PlanController;
 use App\Http\Controllers\AuthController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,10 +48,21 @@ Route::post('/plans', [PlanController::class, 'store'])->name('plans.store');
 Route::get('/members/{member_id}', [MembershipController::class, 'detail'])->name('members.detail');
 
 
+// routes/web.php
+Route::post('/members/reset-membership/{member}', [MembershipController::class, 'resetMembership'])->name('members.resetMembership');
 
-Route::post('/signup', [AuthController::class, 'signup']);
+
+Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
 
 
-Route::get('/signup', function () {
-    return view('signup');
-})->name('signup');
+Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
+
+Route::get('/plans/{id}/edit', [PlanController::class, 'edit'])->name('plans.edit');
+Route::put('/plans/{id}', [PlanController::class, 'update'])->name('plans.update');
+
+
+Route::get('/plans/download/{membership_id}', [PlanController::class, 'downloadPDF'])->name('plans.download.pdf');
+
+
+Route::get('/pdf/form', [PlanController::class, 'showForm'])->name('pdf.form');
+Route::post('/pdf/generate', [PlanController::class, 'generatePDF'])->name('pdf.generate');

@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('membership_id');
-            $table->string('diet_plan');
-            $table->string('workout_plan');
+            $table->text('diet_plan');
+            $table->text('workout_plan');
             $table->timestamps();
 
             $table->foreign('membership_id')->references('id')->on('memberships')->onDelete('cascade');

@@ -16,19 +16,21 @@
     <title>Web Design Mastery | REV-1</title>
   </head>
   <body>
-    <header>
+ <header>
+
       <x-navbar />
       <div class="section__container header__container" id="home">
-        <div class="header__image">
+        {{-- <div class="header__image">
           <img src="assets/header.png" alt="header" />
-        </div>
+        </div> --}}
         <div class="header__content">
-          <h1>GET HEALTHY BODY WITH THE PERFECT EXERCISES</h1>
+          <h1 class="font-extrabold text-white" style="font-size: 4rem;">
+             REV-1<br>GYM & FITNESS
+             </h1>
           <p class="section__description">
             Achieve your dream body with expertly designed exercises tailored
             for strength, endurance, and overall well-being. Whether you're a
-            beginner or a fitness enthusiast, our workouts are crafted to help
-            you stay active, build muscle, and improve flexibility.
+            beginner or a fitness ent
           </p>
           <div class="header__btn">
             <a href="{{ route('membership.index') }}" class="btn">Get Started</a>
@@ -55,8 +57,51 @@
 
     <section class="about" id="about">
       <div class="section__container about__container">
-        <div class="about__image">
-          <img src="assets/about.jpg" alt="about" />
+        <div class="testimonial__swiper">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+
+                    <img src="assets/s7.png" alt="user" />
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+                  <img src="assets/s1.png" alt="user" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+                  <img src="assets/s2.png" alt="user" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+                  <img src="assets/s3.png" alt="user" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+                  <img src="assets/s4.png" alt="user" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+                  <img src="assets/s5.png" alt="user" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+                  <img src="assets/s6.png" alt="user" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="about__content">
           <h2 class="section__header">Get Ready To Reach Your Fitness Goals</h2>
@@ -278,9 +323,7 @@
                     <span><i class="ri-star-fill"></i></span>
                   </div>
                   <p class="section__description">
-                    Rev-1 has completely changed my approach to fitness. The
-                    personal training sessions are amazing, and I've seen
-                    incredible progress in my strength and endurance!
+                     Bhombola uira ja manger pola ??
                   </p>
                 </div>
               </div>
